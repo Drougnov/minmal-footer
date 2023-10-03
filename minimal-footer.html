@@ -20,6 +20,10 @@
                 gap: 16px;
             }
 
+            i.grey-text {
+                color: grey;
+            }
+
             .footer-column-two {
                 list-style-type: none;
                 flex-basis: 30%;
@@ -40,30 +44,31 @@
                 width: 40px;
                 height: 40px;
             }
-
-            @media (max-width: 650px) {
-                .footer {
-                    flex-direction: column;
-                    gap: 32px;
-                }
-            }
         </style>
     </head>
     <body>
-        <footer class="footer gsCWf w_100">
-            <div class="footer-column footer-column-one gsCWf zaSgn">
+        <footer class="footer gsCWf w_100 zaSgn">
+            <div class="footer-column footer-column-one gsCWf">
                 <span>DMCA</span>
-                <span>Anti Sexual Exploitation Policies</span>
+                <span
+                    >Anti Sexual Exploitation Policies (<i class="grey-text"
+                        >USC 2257, Anti-Slavery and Anti-Sex Trafficking,
+                        CSAM</i
+                    >)</span
+                >
             </div>
-
-            <ul class="footer-column footer-column-two gsCWf zaSgn">
-                <li><a href="#" class="footer-link">Terms & Conditions</a></li>
-                <li><a href="#" class="footer-link">Privacy Policies</a></li>
-                <li><a href="#" class="footer-link">Enquiry Email</a></li>
+            <ul class="footer-column footer-column-two gsCWf">
+                <li>
+                    <a href="#" class="footer-link DeYlt">Terms & Conditions</a>
+                </li>
+                <li>
+                    <a href="#" class="footer-link DeYlt">Privacy Policies</a>
+                </li>
+                <li><a href="#" class="footer-link DeYlt">Enquiry Email</a></li>
             </ul>
 
             <ul class="footer-column footer-column-three gsCWf">
-                <li>
+                <li class="DeYlt">
                     <svg
                         class="icon-credit-card icon-paypal"
                         viewBox="0 -140 780 780"
@@ -112,7 +117,7 @@
                         </g>
                     </svg>
                 </li>
-                <li>
+                <li class="DeYlt">
                     <svg
                         class="icon-credit-card icon-visa"
                         viewBox="0 -140 780 780"
@@ -145,7 +150,7 @@
                         </g>
                     </svg>
                 </li>
-                <li>
+                <li class="DeYlt">
                     <svg
                         class="icon-credit-card icon-mastercard"
                         viewBox="0 -140 780 780"
@@ -192,7 +197,7 @@
                         </g>
                     </svg>
                 </li>
-                <li>
+                <li class="DeYlt">
                     <svg
                         class="icon-credit-card icon-american-express"
                         viewBox="0 -140 780 780"
